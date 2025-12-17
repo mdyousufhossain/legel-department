@@ -40,10 +40,10 @@ const AboutSection = () => {
               <span className="italic text-slate-500">modern agility.</span>
             </h2>
             <p className="text-slate-600 text-lg mb-6 leading-relaxed">
-              Founded in 1985 in the heart of Dhaka, Lexicon started with a singular mission: to provide uncompromising legal defense for the region's emerging enterprises.
+              Founded in 1985 in the heart of Dhaka, Sky Space Aviation started with a singular mission: to provide uncompromising legal defense for the regions emerging enterprises.
             </p>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              Today, we operate globally, yet our core philosophy remains unchanged. We don't just interpret the law; we anticipate how it impacts your bottom line. Our team of 120+ attorneys specializes in turning regulatory complexity into competitive advantage.
+              Today, we operate globally, yet our core philosophy remains unchanged. We dont just interpret the law; we anticipate how it impacts your bottom line. Our team of 120+ attorneys specializes in turning regulatory complexity into competitive advantage.
             </p>
             
             <div className="grid grid-cols-2 gap-8 border-t border-slate-200 pt-8">

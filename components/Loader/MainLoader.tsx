@@ -21,7 +21,7 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
         >
           <Scale className="text-amber-500 w-8 h-8 md:w-12 md:h-12" />
           <span className="text-3xl md:text-5xl font-serif font-bold text-white tracking-tight">
-            LEXICON<span className="text-amber-500">.</span>
+            Sky Space Aviation<span className="text-amber-500">.</span>
           </span>
         </motion.div>
       </div>

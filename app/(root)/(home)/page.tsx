@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, easeInOut } from "framer-motion";
 
 import { 
   Scale, ShieldCheck, Briefcase, Gavel, ArrowRight, Menu, X, 
@@ -20,7 +20,7 @@ import Link from "next/link";
 // --- Animation Variants ---
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeInOut } }
 };
 
 const staggerContainer = {
@@ -86,7 +86,7 @@ const Hero = () => {
 
 
 
-const PracticeArea = ({ icon: Icon, title, desc }: { icon: any, title: string, desc: string }) => (
+const PracticeArea = ({ icon: Icon, title, desc }: { icon: React.ComponentType<{ className?: string , size?: number }>, title: string, desc: string }) => (
   <motion.div 
     variants={fadeInUp}
     className="group p-8 bg-white border border-slate-100 hover:border-amber-500/30 hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 relative overflow-hidden"
@@ -180,9 +180,9 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col gap-6 justify-center lg:justify-start">
                   {[
-                    { icon: Phone, text: "+1 (555) 123-4567" },
-                    { icon: Mail, text: "partners@lexicon.law" },
-                    { icon: MapPin, text: "100 Wall Street, NY 10005" }
+                    { icon: Phone, text: "+8801712218542" },
+                    { icon: Mail, text: "aviationskyspace@gmail.com" },
+                    { icon: MapPin, text: "89/1,New West Monipur,Mirpur-2, Dhaka-1216" }
                   ].map((item, i) => (
                       <div key={i} className="flex items-center gap-4 text-slate-300 justify-center lg:justify-start">
                         <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-amber-500">

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
+import Link from "next/link";
 
 
  const Navbar = () => {
@@ -18,20 +19,22 @@ import { ArrowRight, Menu, X } from "lucide-react";
   return (
     <nav className={`fixed w-full z-40 transition-all duration-300 ${scrolled ? "bg-slate-900/90 backdrop-blur-md py-3 shadow-lg border-b border-white/5" : "bg-transparent py-6"}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <div className="font-serif text-2xl font-bold text-white tracking-wide relative z-50">
-          LEXICON<span className="text-amber-500">.</span>
+        <div className="font-serif text-sm font-bold text-white tracking-wide relative z-50">
+          <Link href={'/'}>
+          Sky Space Aviation <span className="text-amber-500 "> <br /> & legel Firm .</span>
+          </Link>
         </div>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-slate-300 text-sm font-medium tracking-wide">
           {['Practice Areas', 'Attorneys', 'Clients', 'Contact'].map((item) => (
-            <a key={item} href={`#${item.toLowerCase().replace(' ', '-')}`} className="hover:text-amber-500 transition-colors">{item}</a>
+            <Link key={item} href={`/${item.toLowerCase().replace(' ', '-')}`} className="hover:text-amber-500 transition-colors">{item}</Link>
           ))}
         </div>
 
-        <button className="hidden md:flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 text-sm font-semibold transition-all">
+        <Link href={'/contact'} className="hidden md:flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 text-sm font-semibold transition-all">
           Free Consultation <ArrowRight size={16} />
-        </button>
+        </Link>
 
         {/* Mobile Toggle */}
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white relative z-50 p-2">
@@ -50,11 +53,12 @@ import { ArrowRight, Menu, X } from "lucide-react";
           >
             <div className="flex flex-col space-y-6 text-xl font-serif text-white">
               {['Practice Areas', 'Attorneys', 'Clients', 'Contact'].map((item) => (
-                <a key={item} onClick={() => setIsOpen(false)} href={`#${item.toLowerCase().replace(' ', '-')}`} className="block pb-2 border-b border-slate-800">{item}</a>
+                <Link key={item} onClick={() => setIsOpen(false)} href={`/${item.toLowerCase().replace(' ', '-')}`} className="block pb-2 border-b border-slate-800">{item}</Link>
               ))}
-              <button className="w-full mt-4 bg-amber-600 py-4 text-base font-sans font-bold uppercase tracking-widest">
+
+              <Link href="/contact" className="w-full mt-4 bg-amber-600 p-4 text-base font-sans font-bold uppercase tracking-widest">
                 Get Consultation
-              </button>
+              </Link>
             </div>
           </motion.div>
         )}

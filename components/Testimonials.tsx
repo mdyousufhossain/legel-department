@@ -5,9 +5,9 @@ const Testimonials = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true, align: "start" });
   
   const reviews = [
-    { text: "Lexicon provided the strategic foresight we needed during our merger. Absolutely indispensable.", author: "James T., CEO of TechGlobal" },
-    { text: "Their litigation team is aggressive, precise, and incredibly effective. They saved our company millions.", author: "Amanda L., Director at BioHealth" },
-    { text: "Professionalism at its peak. They handled our IP portfolio with unmatched attention to detail.", author: "Robert K., Founder of StartUp Inc." },
+    { text: "Sky Space Aviation provided the strategic foresight we needed during our merger. Absolutely indispensable.", author: "Omar T., CEO of TechNoBd" },
+    { text: "Their litigation team is aggressive, precise, and incredibly effective. They saved our company millions.", author: "Ahmed L., Director at BioPharma" },
+    { text: "Professionalism at its peak. They handled our IP portfolio with unmatched attention to detail.", author: "Robin K., Founder of Boishaki Inc." },
   ];
 
   return (
@@ -32,7 +32,7 @@ const Testimonials = () => {
                   <div className="flex gap-1 text-amber-500 mb-6">
                       {[...Array(5)].map((_, i) => <CheckCircle2 key={i} size={16} fill="currentColor" className="text-amber-500" />)}
                   </div>
-                  <p className="text-slate-700 text-lg italic mb-6 leading-relaxed">"{review.text}"</p>
+                  <p className="text-slate-700 text-lg italic mb-6 leading-relaxed">&quot;{review.text} &quot;</p>
                   <div>
                     <p className="font-bold text-slate-900 text-sm">{review.author.split(',')[0]}</p>
                     <p className="text-slate-500 text-xs uppercase tracking-wider">{review.author.split(',')[1]}</p>

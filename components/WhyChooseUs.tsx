@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
     <section className="py-24 bg-slate-900 text-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-amber-500 font-bold uppercase tracking-widest text-xs mb-2 block">The Lexicon Difference</span>
+          <span className="text-amber-500 font-bold uppercase tracking-widest text-xs mb-2 block">The Sky Space Aviation Difference</span>
           <h2 className="font-serif text-4xl md:text-5xl mb-6">Why Industry Leaders Trust Us</h2>
         </div>
 

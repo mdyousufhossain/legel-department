@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import { motion, cubicBezier } from "framer-motion";
 import { 
   Briefcase, Scale, ShieldCheck, Gavel, FileText, 
   Globe, Landmark, Users, ArrowRight, CheckCircle2 
@@ -12,7 +11,7 @@ import Image from "next/image";
 // Reusing your animation variants for consistency
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: cubicBezier(0.22, 1, 0.36, 1) } }
 };
 
 const staggerContainer = {
@@ -165,9 +164,9 @@ const Methodology = () => (
     <div className="container mx-auto px-6">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="font-serif text-3xl md:text-4xl text-slate-900 mb-6">The Lexicon Approach</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-slate-900 mb-6">The Sky Space Aviation Approach</h2>
           <p className="text-slate-600 text-lg leading-relaxed mb-6">
-            We don't believe in template solutions. Every case, transaction, and advisory role begins with a blank slate and a rigorous analysis of your specific commercial objectives.
+            We dont believe in template solutions. Every case, transaction, and advisory role begins with a blank slate and a rigorous analysis of your specific commercial objectives.
           </p>
           <ul className="space-y-4">
             {[
