@@ -27,7 +27,7 @@ import Link from "next/link";
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-slate-300 text-sm font-medium tracking-wide">
-          {['Practice Areas', 'Attorneys', 'Clients', 'Contact'].map((item) => (
+          {['Practice Areas', 'Clients', 'Contact'].map((item) => (
             <Link key={item} href={`/${item.toLowerCase().replace(' ', '-')}`} className="hover:text-amber-500 transition-colors">{item}</Link>
           ))}
         </div>
@@ -52,7 +52,7 @@ import Link from "next/link";
             className="fixed inset-0 bg-slate-900 z-40 pt-24 px-6 md:hidden"
           >
             <div className="flex flex-col space-y-6 text-xl font-serif text-white">
-              {['Practice Areas', 'Attorneys', 'Clients', 'Contact'].map((item) => (
+              {['Practice Areas', 'Clients', 'Contact'].map((item) => (
                 <Link key={item} onClick={() => setIsOpen(false)} href={`/${item.toLowerCase().replace(' ', '-')}`} className="block pb-2 border-b border-slate-800">{item}</Link>
               ))}
 
