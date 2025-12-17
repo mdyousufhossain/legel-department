@@ -114,7 +114,7 @@ export default function Home() {
         <ClientTicker />
 
         <article>
-        <AboutSection />
+        {/* <AboutSection /> */}
         <WhyChooseUs />
 
         {/* Practice Areas */}
@@ -161,7 +161,7 @@ export default function Home() {
         </article>
         
         <aside>
-        <RecentCases />
+        {/* <RecentCases /> */}
         <Testimonials />
         <TeamSection />
         </aside>
