@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Scale } from "lucide-react";
+import Image from "next/image";
 
 export const Loader = ({ onComplete }: { onComplete: () => void }) => {
   return (
@@ -19,7 +20,7 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
           transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
           className="flex items-center gap-2"
         >
-          <Scale className="text-amber-500 w-8 h-8 md:w-12 md:h-12" />
+          <Image src="/logo.png" alt="Sky Space Aviation Logo" width={40} height={40} />
           <span className="text-3xl md:text-5xl font-serif font-bold text-white tracking-tight">
             Sky Space Aviation<span className="text-amber-500">.</span>
           </span>
