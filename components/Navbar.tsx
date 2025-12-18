@@ -61,7 +61,7 @@ const Navbar = () => {
                 SKY SPACE
               </span>
               <span className="text-[9px] md:text-[10px] font-sans font-bold uppercase tracking-[0.3em] text-amber-500">
-                Aviation & Legal
+                Aviation & Legal Firm
               </span>
             </div>
           </Link>
