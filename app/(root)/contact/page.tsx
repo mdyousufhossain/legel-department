@@ -43,6 +43,9 @@ const ContactHero = () => (
   </section>
 );
 
+
+ // Corporate address: Raisa Tower, 60 Feet Road. Mirpur 2,Dhaka- 1216
+
 const ContactInfo = () => {
   const contactDetails = [
     {
@@ -53,6 +56,13 @@ const ContactInfo = () => {
       link: "https://maps.google.com/?q=89/1+New+West+Monipur+Mirpur+2+Dhaka"
     },
     {
+      icon: MapPin,
+      title: "Corporate Office",
+      lines: ["Raisa Tower, 60 Feet Road", "Mirpur 2, Dhaka-1216"],
+      action: "Get Directions",
+      link: "https://maps.google.com/?q=Raisa+Tower,+60+Feet+Road,+Mirpur+2,+Dhaka-1216"
+    },
+    { 
       icon: Phone,
       title: "Phone Support",
       lines: ["+88 01712-218542", "+88 01756-481563"],
@@ -65,14 +75,14 @@ const ContactInfo = () => {
       lines: ["aviationskyspace@gmail.com"], // Added a professional fallback if needed
       action: "Send Message",
       link: "mailto:aviationskyspace@gmail.com"
-    },
-    {
-      icon: Globe,
-      title: "Online",
-      lines: ["www.skyspaceaviation.com"],
-      action: "Visit Site",
-      link: "https://www.skyspaceaviation.com"
-    }
+     },
+    // {
+    //   icon: Globe,
+    //   title: "Online",
+    //   lines: ["www.skyspaceaviation.com"],
+    //   action: "Visit Site",
+    //   link: "https://www.skyspaceaviation.com"
+    // }
   ];
 
   return (
@@ -155,21 +165,21 @@ const ContactForm = () => (
   </motion.div>
 );
 
-const MapPlaceholder = () => (
-  <div className="h-[400px] w-full bg-slate-200 relative overflow-hidden grayscale">
-    {/* NOTE: In a real production app, replace this with a Google Maps Embed Iframe.
-      Since we cannot use API keys here, we use a static image representation.
-    */}
-    <div className="absolute inset-0 flex items-center justify-center bg-slate-300">
-        <div className="text-center">
-            <MapPin size={48} className="text-slate-400 mx-auto mb-4" />
-            <p className="text-slate-500 font-bold uppercase tracking-widest text-sm">Interactive Map Loading...</p>
-            <p className="text-slate-400 text-xs mt-2">Mirpur-2, Dhaka-1216</p>
-        </div>
-    </div>
-    {/* Optional: Overlay simulating map texture if you have a map image */}
-  </div>
-);
+// const MapPlaceholder = () => (
+//   <div className="h-[400px] w-full bg-slate-200 relative overflow-hidden grayscale">
+//     {/* NOTE: In a real production app, replace this with a Google Maps Embed Iframe.
+//       Since we cannot use API keys here, we use a static image representation.
+//     */}
+//     <div className="absolute inset-0 flex items-center justify-center bg-slate-300">
+//         <div className="text-center">
+//             <MapPin size={48} className="text-slate-400 mx-auto mb-4" />
+//             <p className="text-slate-500 font-bold uppercase tracking-widest text-sm">Interactive Map Loading...</p>
+//             <p className="text-slate-400 text-xs mt-2">Mirpur-2, Dhaka-1216</p>
+//         </div>
+//     </div>
+//     {/* Optional: Overlay simulating map texture if you have a map image */}
+//   </div>
+// );
 
 export default function ContactPage() {
   return (
@@ -222,9 +232,9 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="border-t border-slate-200">
+      {/* <section className="border-t border-slate-200">
         <MapPlaceholder />
-      </section>
+      </section> */}
 
     </main>
   );

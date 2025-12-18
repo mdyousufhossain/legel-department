@@ -3,12 +3,12 @@
 import { motion, cubicBezier } from "framer-motion";
 import { 
   Briefcase, Scale, ShieldCheck, Gavel, FileText, 
-  Globe, Landmark, Users, ArrowRight, CheckCircle2 
+  Globe, Landmark, Users, ArrowRight, CheckCircle2 ,Plane , Radio
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-// Reusing your animation variants for consistency
+// Reusing your animation variants for consistency 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: cubicBezier(0.22, 1, 0.36, 1) } }
@@ -25,99 +25,111 @@ const staggerContainer = {
 // --- Data ---
 const practiceAreas = [
   {
-    title: "Corporate & Securities",
+    title: "Corporate & Foreign Direct Investments",
     icon: Briefcase,
-    description: "Advising public and private companies on their most significant transactional and governance matters.",
+    description: "Providing strategic counsel on global market entry and high-value corporate restructuring.",
     capabilities: [
-      "Mergers & Acquisitions (M&A)",
-      "Capital Markets & IPOs",
-      "Corporate Governance",
-      "Private Equity",
-      "Joint Ventures"
+      "Foreign Direct Investment (FDI)",
+      "Business Setup & Company Formation",
+      "Joint Ventures",
+      "Securities & Capital Markets",
+      "Corporate Governance"
     ]
   },
   {
-    title: "Commercial Litigation",
+    title: "Litigation & Dispute Resolution",
     icon: Scale,
-    description: "Trial-ready representation for high-stakes business disputes across federal and state jurisdictions.",
+    description: "Trial-ready representation for high-stakes business and criminal disputes across all jurisdictions.",
     capabilities: [
-      "Breach of Contract",
-      "Class Action Defense",
-      "Antitrust & Competition",
-      "Securities Litigation",
-      "White Collar Defense"
+      "Commercial & Civil Litigation",
+      "Criminal Law Defense",
+      "Family Law Matters",
+      "Alternative Dispute Resolution (ADR)",
+      "Appellate Practice"
     ]
   },
   {
-    title: "Intellectual Property",
-    icon: ShieldCheck,
-    description: "Protecting the intangible assets that drive value in the modern economy.",
+    title: "Aviation & Maritime",
+    icon: Plane, // or Ship
+    description: "Specialized legal services for the transport sector, covering regulatory compliance and vessel operations.",
     capabilities: [
-      "Patent Litigation",
-      "Trademark & Branding",
-      "Copyright Enforcement",
-      "Trade Secrets",
-      "IP Portfolio Management"
+      "Aviation Law & Maritime Law",
+      "Airlines & Passenger Dispute Resolutions",
+      "Transport & Cargo Dispute Resolutions",
+      "Vessel Registration",
+      "Aircraft Financing"
     ]
   },
   {
-    title: "Real Estate & Land Use",
-    icon: Gavel, // or MapPin styled icon
-    description: "Comprehensive counsel for developers, investors, and lenders in complex property transactions.",
+    title: "Telecommunications & Broadcasting",
+    icon: Radio,
+    description: "Navigating the complex regulatory and licensing landscape of the media and tech sectors.",
     capabilities: [
+      "Licensing Matters",
+      "Regulatory Compliance",
+      "Spectrum Allocation",
+      "Broadcasting Rights",
+      "Telecom Infrastructure"
+    ]
+  },
+  {
+    title: "Property & Real Estate",
+    icon: Gavel,
+    description: "Comprehensive due diligence and advisory for property acquisition and development.",
+    capabilities: [
+      "Property Vetting & Due Diligence",
       "Commercial Development",
       "Zoning & Land Use",
       "Real Estate Finance",
-      "Leasing & Asset Management",
       "Construction Law"
     ]
   },
   {
-    title: "Labor & Employment",
-    icon: Users,
-    description: "Navigating the complex human capital landscape with strategic compliance and defense.",
-    capabilities: [
-      "Executive Compensation",
-      "Workplace Investigations",
-      "Discrimination Defense",
-      "Labor Relations",
-      "Non-Compete Enforcement"
-    ]
-  },
-  {
-    title: "Banking & Finance",
+    title: "Banking & Financial Matters",
     icon: Landmark,
-    description: "Representing financial institutions and borrowers in sophisticated lending structures.",
+    description: "Representing financial institutions and borrowers in sophisticated lending and regulatory structures.",
     capabilities: [
       "Syndicated Lending",
-      "Asset-Based Finance",
       "Project Finance",
       "Restructuring & Insolvency",
-      "Fintech Regulation"
+      "Fintech Regulation",
+      "Debt Recovery"
     ]
   },
   {
-    title: "Tax Strategy",
+    title: "Intellectual Property & Trade",
+    icon: ShieldCheck,
+    description: "Protecting the intangible assets and commercial interests of global enterprises.",
+    capabilities: [
+      "IP Portfolio Management",
+      "Trademark & Branding",
+      "Trade & Commerce Regulations",
+      "Copyright Enforcement",
+      "Trade Secrets"
+    ]
+  },
+  {
+    title: "Labour & Employment",
+    icon: Users,
+    description: "Strategic advisory on workplace compliance, human capital, and labor relations.",
+    capabilities: [
+      "Workplace Investigations",
+      "Labor Relations",
+      "Executive Compensation",
+      "Employment Contracts",
+      "Discrimination Defense"
+    ]
+  },
+  {
+    title: "Taxation & VAT",
     icon: FileText,
-    description: "Optimizing tax efficiency for global enterprises and high-net-worth individuals.",
+    description: "Optimizing tax efficiency and ensuring compliance with national and international tax laws.",
     capabilities: [
+      "VAT Planning & Compliance",
+      "Tax Controversy & Litigation",
       "International Tax Planning",
-      "Transactional Tax",
-      "Tax Controversy",
       "Wealth Transfer",
-      "State & Local Tax"
-    ]
-  },
-  {
-    title: "International Arbitration",
-    icon: Globe,
-    description: "Resolving cross-border disputes in major arbitral forums worldwide.",
-    capabilities: [
-      "Investment Treaty Arbitration",
-      "Commercial Arbitration",
-      "Public International Law",
-      "Enforcement of Awards",
-      "Sovereign Representation"
+      "Corporate Tax Strategy"
     ]
   }
 ];
@@ -184,12 +196,17 @@ const Methodology = () => (
             ))}
           </ul>
         </div>
+        
+        {/* FIXED IMAGE SECTION BELOW */}
         <div className="relative h-[400px] bg-slate-100 rounded-lg overflow-hidden">
-             {/* Replace with a real image of attorneys collaborating */}
-             <div className="absolute inset-0 bg-slate-200 flex items-center justify-center text-slate-400">
-                <span className="text-sm uppercase tracking-widest">[Image: Team Strategy Session]</span>
-             </div>
+           <Image 
+             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80"
+             alt="Legal Team Meeting"
+             fill
+             className="object-cover"
+           />
         </div>
+        
       </div>
     </div>
   </section>
