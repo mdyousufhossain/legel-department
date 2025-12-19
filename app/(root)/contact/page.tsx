@@ -86,7 +86,7 @@ const ContactInfo = () => {
   ];
 
   return (
-    <div className="grid md:grid-cols-2 gap-8 mb-16">
+    <div className="grid md:grid-cols-2  gap-8 mb-16">
       {contactDetails.map((item, idx) => (
         <motion.div 
           key={idx}
@@ -165,21 +165,8 @@ const ContactForm = () => (
   </motion.div>
 );
 
-// const MapPlaceholder = () => (
-//   <div className="h-[400px] w-full bg-slate-200 relative overflow-hidden grayscale">
-//     {/* NOTE: In a real production app, replace this with a Google Maps Embed Iframe.
-//       Since we cannot use API keys here, we use a static image representation.
-//     */}
-//     <div className="absolute inset-0 flex items-center justify-center bg-slate-300">
-//         <div className="text-center">
-//             <MapPin size={48} className="text-slate-400 mx-auto mb-4" />
-//             <p className="text-slate-500 font-bold uppercase tracking-widest text-sm">Interactive Map Loading...</p>
-//             <p className="text-slate-400 text-xs mt-2">Mirpur-2, Dhaka-1216</p>
-//         </div>
-//     </div>
-//     {/* Optional: Overlay simulating map texture if you have a map image */}
-//   </div>
-// );
+
+
 
 export default function ContactPage() {
   return (
@@ -196,7 +183,7 @@ export default function ContactPage() {
                whileInView="visible" 
                viewport={{ once: true }}
                variants={staggerContainer}
-               className="lg:col-span-5"
+               className="lg:col-span-12 lg:col-start-2"
             >
               <ContactInfo />
               

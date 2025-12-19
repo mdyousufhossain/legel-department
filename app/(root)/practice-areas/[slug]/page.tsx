@@ -62,7 +62,7 @@ export default function PracticeAreaDetail() {
                 <p className="text-slate-400 mb-6 text-sm">
                   Speak with our {area.title} specialists regarding your legal requirements.
                 </p>
-                <Link href="/contact" className="w-full bg-amber-600 py-4 font-bold uppercase tracking-widest text-xs hover:bg-amber-700 transition-all">
+                <Link href="/contact" className="w-full bg-amber-600 font-bold uppercase tracking-widest text-xs hover:bg-amber-700 transition-all p-4 inline-block text-center rounded-lg">
                   Contact an Expert
                 </Link>
               </div>
