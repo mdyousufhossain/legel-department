@@ -13,11 +13,8 @@ const clientSections = [
     description: "Our primary partners and group entities driving innovation in aviation and engineering.",
     icon: Star, 
     clients: [
-      "Sky Space Company", 
-      "SKY SPCE ENGINEERING",
-      "SKY SPEED AVIATION",
-      "Sky Speed Engineering",
       "Sky space engineering LTD",
+      "SKY SPEED AVIATION",
       "SKY SPACE TRANSPORT & CARGO SERVICES"
     ]
   },
@@ -35,11 +32,11 @@ const clientSections = [
     description: "A diverse portfolio of enterprises across healthcare, media, and global trade.",
     icon: Briefcase,
     clients: [
+      "SRITY DENTAL CLINIC",
       "DAIYAN & AYAN ENTERPRISE",
       "BEE FLIMS",
       "ENGINEE TRIP",
       "MS RELIABLE INTERNATIONAL",
-      "SRITY DENTAL CLINIC",
       "NIBAN Enterprises",
       "ZP ENTERPRISE",
       "GREEN TIMES (NEWSPAPER)",

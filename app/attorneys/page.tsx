@@ -72,7 +72,7 @@ const attorneys = [
   },
   {
     name: "Adv. Golam Zakaria Shakil",
-    role: "Senior Partner & Tax Advisor",
+    role: "Tax Advisor",
     specialty: "Aviation & Maritime Law",
     credentials: [
       "LL.M in Intl. Air & Space Law (AAUB)",

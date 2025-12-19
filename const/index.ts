@@ -1,8 +1,9 @@
-// data/practice-areas.ts
-import { 
-  Briefcase, Scale, ShieldCheck, Gavel, FileText, 
-  Users, Plane, Radio, Landmark 
-} from "lucide-react";
+import { Briefcase , FileText, Gavel, Landmark, Plane, Radio, Scale, ShieldCheck, Users } from "lucide-react";
+
+
+
+
+
 
 export const practiceAreasMini = [
   {
@@ -17,18 +18,51 @@ export const practiceAreasMini = [
       "Aircraft Financing"
     ]
   },
+
+  // 🔹 NEW — 2nd item
+  
   {
     slug: "airlines-passenger-dispute-resolutions",
     title: "Airlines & Passenger Dispute Resolutions",
     icon: Users,
     description:
-      "Legal representation for carriers and passengers regarding regulatory claims and liability.",
+    "Legal representation for carriers and passengers regarding regulatory claims and liability.",
     capabilities: [
       "Consumer Protection Claims",
       "Flight Delay & Cancellation Liability",
       "Baggage & Personal Injury Claims",
       "ICAO/IATA Compliance",
       "Ticket Refund Litigation"
+    ]
+  },
+  {
+    slug: "tender-specialist",
+    title: "Tender Specialist",
+    icon: FileText,
+    description:
+      "Expert legal advisory and documentation support for public and private sector tender processes.",
+    capabilities: [
+      "Tender Documentation Review",
+      "Bid Compliance Advisory",
+      "Government Procurement Rules",
+      "Tender Dispute Resolution",
+      "Contract Award Challenges"
+    ]
+  },
+
+  // 🔹 NEW — 3rd item
+  {
+    slug: "legal-licensing",
+    title: "Legal & Licensing",
+    icon: ShieldCheck,
+    description:
+      "Comprehensive legal support for regulatory approvals, licenses, and statutory compliance.",
+    capabilities: [
+      "Trade License & Renewals",
+      "Regulatory Permissions",
+      "Industry-Specific Licensing",
+      "Compliance Audits",
+      "Authority Liaison & Approvals"
     ]
   },
   {
@@ -59,20 +93,20 @@ export const practiceAreasMini = [
       "Warehousing Disputes"
     ]
   },
-  {
-    slug: "corporate-foreign-direct-investments",
-    title: "Corporate & Foreign Direct Investments",
-    icon: Briefcase,
-    description:
-      "Providing strategic counsel on global market entry and high-value corporate restructuring.",
-    capabilities: [
-      "Foreign Direct Investment (FDI)",
-      "Business Setup & Company Formation",
-      "Joint Ventures",
-      "Securities & Capital Markets",
-      "Corporate Governance"
-    ]
-  },
+  // {
+  //   slug: "corporate-foreign-direct-investments",
+  //   title: "Corporate & Foreign Direct Investments",
+  //   icon: Briefcase,
+  //   description:
+  //     "Providing strategic counsel on global market entry and high-value corporate restructuring.",
+  //   capabilities: [
+  //     "Foreign Direct Investment (FDI)",
+  //     "Business Setup & Company Formation",
+  //     "Joint Ventures",
+  //     "Securities & Capital Markets",
+  //     "Corporate Governance"
+  //   ]
+  // },
   {
     slug: "litigation-dispute-resolution",
     title: "Litigation & Dispute Resolution",
@@ -130,26 +164,13 @@ export const practiceAreasMini = [
     ]
   },
   {
-    slug: "intellectual-property-trade",
-    title: "Intellectual Property & Trade",
-    icon: ShieldCheck,
-    description:
-      "Protecting the intangible assets and commercial interests of global enterprises.",
-    capabilities: [
-      "IP Portfolio Management",
-      "Trademark & Branding",
-      "Trade & Commerce Regulations",
-      "Copyright Enforcement",
-      "Trade Secrets"
-    ]
-  },
-  {
     slug: "labour-employment",
     title: "Labour & Employment",
     icon: Users,
     description:
       "Strategic advisory on workplace compliance, human capital, and labor relations.",
     capabilities: [
+      "Prepare documents for DIFE License",
       "Workplace Investigations",
       "Labor Relations",
       "Executive Compensation",
@@ -175,6 +196,7 @@ export const practiceAreasLarge = [
       "Aircraft Financing"
     ]
   },
+
   {
     slug: "airlines-passenger-dispute-resolutions",
     title: "Airlines & Passenger Dispute Resolutions",
@@ -191,6 +213,42 @@ export const practiceAreasLarge = [
       "Ticket Refund Litigation"
     ]
   },
+  // 🔹 NEW — 2nd item
+  {
+    slug: "tender-specialist",
+    title: "Tender Specialist",
+    icon: FileText,
+    description:
+      "Expert legal advisory and documentation support for public and private sector tender processes.",
+    detailedContent:
+      "Our Tender Specialist practice provides end-to-end legal support for tender participation across government and private entities. We assist clients with bid documentation, compliance analysis, evaluation challenges, and dispute resolution relating to procurement processes.",
+    capabilities: [
+      "Tender Documentation Review",
+      "Bid Compliance Advisory",
+      "Government Procurement Rules",
+      "Tender Dispute Resolution",
+      "Contract Award Challenges"
+    ]
+  },
+
+  // 🔹 NEW — 3rd item
+  {
+    slug: "legal-licensing",
+    title: "Legal & Licensing",
+    icon: ShieldCheck,
+    description:
+      "Comprehensive legal support for regulatory approvals, licenses, and statutory compliance.",
+    detailedContent:
+      "Our Legal & Licensing practice assists businesses in obtaining, maintaining, and renewing statutory licenses and regulatory approvals. We work closely with regulatory authorities to ensure full compliance across industry-specific and general legal requirements.",
+    capabilities: [
+      "Trade License & Renewals",
+      "Regulatory Permissions",
+      "Industry-Specific Licensing",
+      "Compliance Audits",
+      "Authority Liaison & Approvals"
+    ]
+  },
+
   {
     slug: "taxation-vat",
     title: "Taxation & VAT",
@@ -221,22 +279,6 @@ export const practiceAreasLarge = [
       "Supply Chain Litigation",
       "Carrier Liability",
       "Warehousing Disputes"
-    ]
-  },
-  {
-    slug: "corporate-foreign-direct-investments",
-    title: "Corporate & Foreign Direct Investments",
-    icon: Briefcase,
-    description:
-      "Providing strategic counsel on global market entry and high-value corporate restructuring.",
-    detailedContent:
-      "Our Corporate & FDI practice advises businesses and investors on company formation, foreign direct investment, joint ventures, and corporate governance. We support clients in structuring investments and complying with regulatory and capital market requirements.",
-    capabilities: [
-      "Foreign Direct Investment (FDI)",
-      "Business Setup & Company Formation",
-      "Joint Ventures",
-      "Securities & Capital Markets",
-      "Corporate Governance"
     ]
   },
   {
@@ -304,22 +346,6 @@ export const practiceAreasLarge = [
     ]
   },
   {
-    slug: "intellectual-property-trade",
-    title: "Intellectual Property & Trade",
-    icon: ShieldCheck,
-    description:
-      "Protecting the intangible assets and commercial interests of global enterprises.",
-    detailedContent:
-      "Our Intellectual Property & Trade practice assists clients in protecting and enforcing intellectual property rights while advising on trade and commerce regulations affecting business operations.",
-    capabilities: [
-      "IP Portfolio Management",
-      "Trademark & Branding",
-      "Trade & Commerce Regulations",
-      "Copyright Enforcement",
-      "Trade Secrets"
-    ]
-  },
-  {
     slug: "labour-employment",
     title: "Labour & Employment",
     icon: Users,
@@ -328,6 +354,7 @@ export const practiceAreasLarge = [
     detailedContent:
       "We advise employers and employees on labor and employment matters, including workplace investigations, employment contracts, executive compensation, labor relations, and discrimination-related issues.",
     capabilities: [
+      "Prepare documents for DIFE License",
       "Workplace Investigations",
       "Labor Relations",
       "Executive Compensation",

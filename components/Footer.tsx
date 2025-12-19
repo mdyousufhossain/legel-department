@@ -61,10 +61,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="hover:text-amber-500 transition-colors">
-                <Link href="/practice-areas/corporate-foreign-direct-investments">Corporate Investments</Link>
+                <Link href="/practice-areas/tender-specialist">Tender Specialist</Link>
               </li>
               <li className="hover:text-amber-500 transition-colors">
-                <Link href="/practice-areas/transport-cargo-dispute-resolutions">Transport Resolutions</Link>
+                <Link href="/practice-areas/taxation-vat">Taxation & VAT</Link>
               </li>
             </ul>
           </div>
