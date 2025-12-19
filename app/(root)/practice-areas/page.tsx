@@ -258,9 +258,9 @@ const PracticeCard = ({ area }: { area: typeof practiceAreas[0] }) => (
         ))}
       </div>
       
-      <Link href="#" className="inline-flex items-center gap-2 text-amber-600 font-bold uppercase tracking-widest text-xs group-hover:gap-3 transition-all">
+      {/* <Link href="#" className="inline-flex items-center gap-2 text-amber-600 font-bold uppercase tracking-widest text-xs group-hover:gap-3 transition-all">
         Case Studies <ArrowRight size={14} />
-      </Link>
+      </Link> */}
     </div>
   </motion.div>
 );

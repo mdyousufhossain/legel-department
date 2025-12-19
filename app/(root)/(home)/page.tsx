@@ -85,12 +85,12 @@ const Hero = () => {
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-            <button className="bg-amber-600 text-white px-6 py-3 font-bold uppercase tracking-widest text-sm hover:bg-amber-700 transition-colors w-full sm:w-auto rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500">
+            <Link href="/practice-areas" className="bg-amber-600 text-white px-6 py-3 font-bold uppercase tracking-widest text-sm hover:bg-amber-700 transition-colors w-full sm:w-auto rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500">
               Practice Areas
-            </button>
-            <button className="border border-amber-500 text-amber-200 px-6 py-3 font-bold uppercase tracking-widest text-sm hover:bg-amber-600/10 hover:text-white transition-all w-full sm:w-auto rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500">
+            </Link>
+            <Link href="/contact" className="border border-amber-500 text-amber-200 px-6 py-3 font-bold uppercase tracking-widest text-sm hover:bg-amber-600/10 hover:text-white transition-all w-full sm:w-auto rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500">
               Contact Us
-            </button>
+            </Link >
           </motion.div>
         </motion.div>
       </div>

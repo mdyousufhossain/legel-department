@@ -36,11 +36,11 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Firm Navigation</h4>
             <ul className="space-y-4 text-sm">
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">About the Firm</Link></li>
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">Practice Areas</Link></li>
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">Attorneys</Link></li>
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">Case Results</Link></li>
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">Careers</Link></li>
+              <li><Link href="/about" className="hover:text-amber-500 transition-colors">About the Firm</Link></li>
+              <li><Link href="/practice-areas" className="hover:text-amber-500 transition-colors">Practice Areas</Link></li>
+              <li><Link href="/attorneys" className="hover:text-amber-500 transition-colors">Attorneys</Link></li>
+              <li><Link href="/clients" className="hover:text-amber-500 transition-colors">Clients</Link></li>
+              <li><Link href="/contact" className="hover:text-amber-500 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -48,11 +48,11 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Expertise</h4>
             <ul className="space-y-4 text-sm">
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">Corporate Litigation</Link></li>
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">Mergers & Acquisitions</Link></li>
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">Intellectual Property</Link></li>
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">Real Estate & Zoning</Link></li>
-              <li><Link href="#" className="hover:text-amber-500 transition-colors">International Arbitration</Link></li>
+              <li className="hover:text-amber-500 transition-colors">Corporate Litigation </li>
+              <li className="hover:text-amber-500 transition-colors">Mergers & Acquisitions</li>
+              <li className="hover:text-amber-500 transition-colors">Intellectual Property</li>
+              <li className="hover:text-amber-500 transition-colors">Real Estate & Zoning</li>
+              <li className="hover:text-amber-500 transition-colors">International Arbitration</li>
             </ul>
           </div>
 
@@ -69,11 +69,11 @@ const Footer = () => {
               </li>
               <li className="flex gap-4 items-center">
                 <Phone className="text-amber-600 shrink-0" size={20} />
-                <span>+8801712218542</span>
+                <Link href="tel:+8801712218542">+8801712218542</Link>
               </li>
               <li className="flex gap-4 items-center">
                 <Mail className="text-amber-600 shrink-0" size={20} />
-                <span>aviationskyspace@gmail.com</span>
+                <Link href="mailto:aviationskyspace@gmail.com">aviationskyspace@gmail.com</Link>
               </li>
             </ul>
           </div>
@@ -85,9 +85,9 @@ const Footer = () => {
         <div className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
           <p>© 2025 Sky Space Aviation & Legal Firm. Attorney Advertising. All rights reserved.</p>
           <div className="flex gap-8">
-            <Link href="#" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-slate-400 transition-colors">Terms of Engagement</Link>
-            <Link href="#" className="hover:text-slate-400 transition-colors">Accessibility</Link>
+            <Link href="/privacy-policy" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
+            <Link href="/term-conditions" className="hover:text-slate-400 transition-colors">Terms of Engagement</Link>
+            {/* <Link href="#" className="hover:text-slate-400 transition-colors">Accessibility</Link> */}
           </div>
         </div>
       </div>
