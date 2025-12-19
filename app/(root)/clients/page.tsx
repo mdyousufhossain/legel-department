@@ -236,15 +236,6 @@ export default function ClientsPage() {
       <ClientList />
       <CTA />
       
-      {/* Visual UX Footer - Trust Badges */}
-      {/* <div className="py-12 bg-white border-t border-slate-100">
-          <div className="container mx-auto px-6 flex flex-wrap justify-center gap-8 md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
-              <span className="text-xs font-black tracking-tighter text-slate-900 italic">SKY SPACE LEGAL</span>
-              <span className="text-xs font-black tracking-tighter text-slate-900 italic">EST. CONSULTANCY</span>
-              <span className="text-xs font-black tracking-tighter text-slate-900 italic">ISO CERTIFIED 2024</span>
-              <span className="text-xs font-black tracking-tighter text-slate-900 italic">GLOBAL COMPLIANCE</span>
-          </div>
-      </div> */}
     </main>
   );
 }

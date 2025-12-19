@@ -65,7 +65,7 @@ const ContactInfo = () => {
     { 
       icon: Phone,
       title: "Phone Support",
-      lines: ["+88 01712-218542", "+88 01756-481563"],
+      lines: ["+88 01712-218542"],
       action: "Call Now",
       link: "tel:+8801712218542"
     },
