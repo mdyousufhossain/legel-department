@@ -5,9 +5,9 @@ const Testimonials = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true, align: "start" });
   
   const reviews = [
-    { text: "Sky Space Aviation provided the strategic foresight we needed during our merger. Absolutely indispensable.", author: "Omar T., CEO of TechNoBd" },
-    { text: "Their litigation team is aggressive, precise, and incredibly effective. They saved our company millions.", author: "Ahmed L., Director at BioPharma" },
-    { text: "Professionalism at its peak. They handled our IP portfolio with unmatched attention to detail.", author: "Robin K., Founder of Boishaki Inc." },
+    { text: "Sky Space Aviation & Legal Consultancy Firm provided us with excellent service. Their team is knowledgeable, responsive, and highly professional. We confidently recommend them for aviation and legal consultancy services.", author: "Owner, BEE FILMS" },
+    { text: "Their litigation team is aggressive, precise, and incredibly effective. They saved our company millions.", author: " MANAGING DIRECTOR, LA-JOWNES INT. LTD" },
+    { text: "Excellent service with strong expertise and professional support. Highly recommended.", author: "CEO, I TRIP ENGINEE" },
   ];
 
   return (

@@ -3,9 +3,22 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform, easeInOut } from "framer-motion";
 
+// 1 aviation and law 
+// 2 licancinng 
+// airline and disturbance
+// transportation law
+// international trade law
+// corporate law
+// mergers and acquisitions
+// intellectual property law
+// real estate law
+
 import { 
   Scale, ShieldCheck, Briefcase, Gavel, ArrowRight, Menu, X, 
-  Phone, Mail, MapPin, ChevronRight, Quote, Linkedin, CheckCircle2 
+  Phone, Mail, MapPin, ChevronRight, Quote, Linkedin, CheckCircle2, 
+  Plane,
+  User,
+  FileText
 } from "lucide-react";
 import Image from "next/image";
 import { Loader } from "@/components/Loader/MainLoader";
@@ -57,11 +70,13 @@ const Hero = () => {
               Established 2019 • Dhaka
             </span>
           </motion.div>
+
+          {/* Justice delayed is justice denied. */}
           
-          <motion.h1 variants={fadeInUp} className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.1]">
-            Justice Defined <br />
+          <motion.h1 variants={fadeInUp} className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.1] uppercase">
+            Justice delayed is <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600">
-              By Integrity.
+              Justice denied.
             </span>
           </motion.h1>
 
@@ -148,9 +163,9 @@ export default function Home() {
               className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
             >
               {[
-                { icon: Briefcase, title: "Corporate Law", desc: "Navigating complex mergers, acquisitions, and corporate governance with precision." },
-                { icon: Scale, title: "Litigation", desc: "Aggressive representation in federal and state courts for high-stakes disputes." },
-                { icon: ShieldCheck, title: "Intellectual Property", desc: "Protecting your innovations and brand identity in a digital-first world." },
+                { icon: Plane, title: "Aviation & Maritime", desc: "Specialized legal services for the transport sector, covering regulatory compliance and vessel operations." },
+                { icon: User, title: "Airlines & Passenger Dispute Resolutions", desc: "Legal representation for carriers and passengers regarding regulatory claims and liability." },
+                { icon: FileText, title: "Taxation & VAT", desc: "Optimizing tax efficiency and ensuring compliance with national and international tax laws." },
                 { icon: Gavel, title: "Real Estate", desc: "Comprehensive counsel for commercial development, leasing, and zoning matters." },
               ].map((practice, index) => (
                 <PracticeArea key={index} {...practice} />

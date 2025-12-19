@@ -11,7 +11,8 @@ import {
   CheckCircle2,
   Gavel,
   Briefcase,
-  ArrowRight
+  ArrowRight,
+  
 } from "lucide-react";
 import Link from "next/link";
 
@@ -33,8 +34,42 @@ const staggerContainer = {
   }
 };
 
+/**
+ * LL.M in intl. Air & Space Law(AAUB) - 2 Years. LL.M, LL.B(Hon"s).  Chief Legal Officer( CLO)
+ * Aviation and Commercial Expert
+ */
+
 // --- Data ---
 const attorneys = [
+{
+    name: "Md Rubayet Hossain Rakib",
+    role: "Chief Legal Officer",
+    specialty: "Aviation and Commercial Expert",
+    credentials: [
+      "LL.M in intl. Air & Space Law(AAUB)",
+      "LL.M,LL.B(Hon's)",
+      "CLO, Sky Space Aviation",
+      "Chief Legal Officer( CLO)"
+    ],
+    icon: Plane,
+    accent: "border-blue-900",
+    bg: "bg-blue-50",
+    iconColor: "text-blue-900"
+  },
+{
+    name: "Md Sabbir Ahammed",
+    role: "Chief Executive Officer",
+    specialty: "Technical Operations",
+    credentials: [
+      "Aircraft Maintenance Engineer",
+      "CEO, Sky Space Aviation",
+      "Aviation Technical Expert"
+    ],
+    icon: ShieldCheck,
+    accent: "border-blue-900",
+    bg: "bg-blue-50",
+    iconColor: "text-blue-900"
+  },
   {
     name: "Adv. Golam Zakaria Shakil",
     role: "Senior Partner & Tax Advisor",
@@ -77,20 +112,6 @@ const attorneys = [
     accent: "border-slate-600",
     bg: "bg-slate-50",
     iconColor: "text-slate-700"
-  },
-  {
-    name: "Md Sabbir Ahammed",
-    role: "Chief Executive Officer",
-    specialty: "Technical Operations",
-    credentials: [
-      "Aircraft Maintenance Engineer",
-      "CEO, Sky Space Aviation",
-      "Aviation Technical Expert"
-    ],
-    icon: ShieldCheck,
-    accent: "border-blue-900",
-    bg: "bg-blue-50",
-    iconColor: "text-blue-900"
   }
 ];
 
@@ -208,10 +229,10 @@ export default function AttorneyPage() {
                 </div>
                 
                 {/* Interactive Footer visual */}
-                <div className="bg-slate-50 px-8 py-4 border-t border-slate-100 flex justify-between items-center group-hover:bg-amber-50/50 transition-colors">
+                {/* <div className="bg-slate-50 px-8 py-4 border-t border-slate-100 flex justify-between items-center group-hover:bg-amber-50/50 transition-colors">
                     <span className="text-xs font-bold text-slate-400 uppercase tracking-widest group-hover:text-amber-700">View Profile</span>
                     <ArrowRight size={16} className="text-slate-300 group-hover:text-amber-600 group-hover:translate-x-1 transition-all" />
-                </div>
+                </div> */}
               </motion.div>
             ))}
           </motion.div>

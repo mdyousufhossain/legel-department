@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="flex gap-4">
               {/* Social Icons Placeholders */}
               <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
-                <a href="tel:+8801756481563" title="Call us">
+                <a href="tel:+8801712218542" title="Call us">
                   <Phone size={18} />
                 </a>
               </div>
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
               <li className="flex gap-4 items-center">
                 <Phone className="text-amber-600 shrink-0" size={20} />
-                <span>+8801756481563</span>
+                <span>+8801712218542</span>
               </li>
               <li className="flex gap-4 items-center">
                 <Mail className="text-amber-600 shrink-0" size={20} />

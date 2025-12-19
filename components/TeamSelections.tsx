@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Award, Gavel, Scale, Briefcase } from "lucide-react";
+import { GraduationCap, Award, Gavel, Scale, Briefcase, ShieldCheck } from "lucide-react";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -17,6 +17,8 @@ const staggerContainer = {
   }
 };
 
+
+
 const attorneys = [
   {
     name: "Md Rubayet Hossain Rakib",
@@ -27,6 +29,17 @@ const attorneys = [
       "LL.M in Intl. Air & Space Law (AAUB) - 2 Years",
       "LL.M, LL.B (Hon's)"
     ]
+  },
+{
+     name: "Md Sabbir Ahammed",
+    role: "Chief Executive Officer",
+    specialty: "Technical Operations",
+    icon: ShieldCheck,
+    education: [
+      "LL.M in Maritime Law - 2 Years",
+      "LL.M, LL.B (Hon's)",
+      "Aviation Technical Expert"
+    ],
   },
   {
     name: "Adv. Golam Zakaria Shakil",

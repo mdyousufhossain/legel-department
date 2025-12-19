@@ -25,6 +25,52 @@ const staggerContainer = {
 // --- Data ---
 const practiceAreas = [
   {
+    title: "Aviation & Maritime",
+    icon: Plane,
+    description: "Specialized legal services for the transport sector, covering regulatory compliance and vessel operations.",
+    capabilities: [
+      "Aviation Law & Maritime Law",
+      "Vessel Registration",
+      "Aircraft Financing"
+    ]
+  },
+  {
+    title: "Airlines & Passenger Dispute Resolutions",
+    icon: Users, // Or a specific aviation icon
+    description: "Legal representation for carriers and passengers regarding regulatory claims and liability.",
+    capabilities: [
+      "Consumer Protection Claims",
+      "Flight Delay & Cancellation Liability",
+      "Baggage & Personal Injury Claims",
+      "ICAO/IATA Compliance",
+      "Ticket Refund Litigation"
+    ]
+  },
+  {
+    title: "Taxation & VAT",
+    icon: FileText,
+    description: "Optimizing tax efficiency and ensuring compliance with national and international tax laws.",
+    capabilities: [
+      "VAT Planning & Compliance",
+      "Tax Controversy & Litigation",
+      "International Tax Planning",
+      "Wealth Transfer",
+      "Corporate Tax Strategy"
+    ]
+  },
+  {
+    title: "Transport & Cargo Dispute Resolutions",
+    icon: Plane, // Suggesting Ship icon to differentiate from Aviation
+    description: "Handling complex logistics litigation, freight claims, and maritime commerce disputes.",
+    capabilities: [
+      "Freight & Logistics Claims",
+      "Cargo Damage Disputes",
+      "Supply Chain Litigation",
+      "Carrier Liability",
+      "Warehousing Disputes"
+    ]
+  },
+  {
     title: "Corporate & Foreign Direct Investments",
     icon: Briefcase,
     description: "Providing strategic counsel on global market entry and high-value corporate restructuring.",
@@ -46,18 +92,6 @@ const practiceAreas = [
       "Family Law Matters",
       "Alternative Dispute Resolution (ADR)",
       "Appellate Practice"
-    ]
-  },
-  {
-    title: "Aviation & Maritime",
-    icon: Plane, // or Ship
-    description: "Specialized legal services for the transport sector, covering regulatory compliance and vessel operations.",
-    capabilities: [
-      "Aviation Law & Maritime Law",
-      "Airlines & Passenger Dispute Resolutions",
-      "Transport & Cargo Dispute Resolutions",
-      "Vessel Registration",
-      "Aircraft Financing"
     ]
   },
   {
@@ -118,18 +152,6 @@ const practiceAreas = [
       "Executive Compensation",
       "Employment Contracts",
       "Discrimination Defense"
-    ]
-  },
-  {
-    title: "Taxation & VAT",
-    icon: FileText,
-    description: "Optimizing tax efficiency and ensuring compliance with national and international tax laws.",
-    capabilities: [
-      "VAT Planning & Compliance",
-      "Tax Controversy & Litigation",
-      "International Tax Planning",
-      "Wealth Transfer",
-      "Corporate Tax Strategy"
     ]
   }
 ];

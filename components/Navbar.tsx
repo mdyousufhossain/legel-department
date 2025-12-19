@@ -28,10 +28,12 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Practice Areas', href: '/practice-areas' },
-    { name: 'Attorneys', href: '/attorneys' },
+    { name: 'Solicitor', href: '/attorneys' },
     { name: 'Clients', href: '/clients' },
     { name: 'About', href: '/about' },
   ];
+
+  const phoneNumber = "+8801712218542";
 
   return (
     <>
@@ -82,13 +84,14 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <Link 
-              href="/contact" 
+            {/* CHANGED: CTA Button to Phone Call */}
+            <a 
+              href={`tel:${phoneNumber}`}
               className="group flex items-center gap-2 bg-amber-600 hover:bg-white hover:text-slate-900 text-white px-6 py-3 text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-300 shadow-xl shadow-amber-900/20"
             >
-              Free Consultation 
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
+              Call Now
+              <PhoneCall size={14} className="group-hover:scale-110 transition-transform" />
+            </a>
           </div>
 
           {/* --- MOBILE TOGGLE --- */}
@@ -143,14 +146,15 @@ const Navbar = () => {
                    transition={{ delay: 0.4 }}
                    className="pt-10"
                 >
-                  <Link 
-                    href="/contact" 
+                  {/* CHANGED: Mobile CTA to Phone Call */}
+                  <a 
+                    href={`tel:${phoneNumber}`}
                     onClick={() => setIsOpen(false)} 
                     className="flex items-center justify-center gap-3 w-full bg-amber-600 py-5 text-white text-sm font-bold uppercase tracking-widest rounded-sm active:scale-95 transition-transform"
                   >
                     <PhoneCall size={18} />
-                    Get Consultation
-                  </Link>
+                    Call Now
+                  </a>
                   <p className="text-center text-slate-500 text-[10px] mt-8 uppercase tracking-widest">
                     Available 24/7 for Aviation Emergencies
                   </p>
