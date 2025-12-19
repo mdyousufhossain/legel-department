@@ -29,6 +29,8 @@ import RecentCases from "@/components/RecentCases";
 import AboutSection from "@/components/AboutSectionts";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Link from "next/link";
+import { practiceAreasMini } from "@/const";
+import PracticeCard from "@/components/PracticeCard";
 
 // --- Animation Variants ---
 const fadeInUp = {
@@ -101,21 +103,21 @@ const Hero = () => {
 
 
 
-const PracticeArea = ({ icon: Icon, title, desc }: { icon: React.ComponentType<{ className?: string , size?: number }>, title: string, desc: string }) => (
-  <motion.div 
-    variants={fadeInUp}
-    className="group p-8 bg-white border border-slate-100 hover:border-amber-500/30 hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 relative overflow-hidden"
-  >
-    <div className="w-12 h-12 bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-amber-600 transition-colors duration-300">
-      <Icon className="text-slate-900 group-hover:text-white transition-colors" size={24} />
-    </div>
-    <h3 className="font-serif text-2xl font-semibold mb-3 text-slate-900">{title}</h3>
-    <p className="text-slate-500 mb-8 leading-relaxed text-sm">{desc}</p>
-    <div className="absolute bottom-8 left-8 flex items-center text-amber-600 font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">
-      Learn More <ChevronRight size={14} className="ml-1" />
-    </div>
-  </motion.div>
-);
+// const PracticeArea = ({ icon: Icon, title, desc }: { icon: React.ComponentType<{ className?: string , size?: number }>, title: string, desc: string }) => (
+//   <motion.div 
+//     variants={fadeInUp}
+//     className="group p-8 bg-white border border-slate-100 hover:border-amber-500/30 hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 relative overflow-hidden"
+//   >
+//     <div className="w-12 h-12 bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-amber-600 transition-colors duration-300">
+//       <Icon className="text-slate-900 group-hover:text-white transition-colors" size={24} />
+//     </div>
+//     <h3 className="font-serif text-2xl font-semibold mb-3 text-slate-900">{title}</h3>
+//     <p className="text-slate-500 mb-8 leading-relaxed text-sm">{desc}</p>
+//     <div className="absolute bottom-8 left-8 flex items-center text-amber-600 font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">
+//       Learn More <ChevronRight size={14} className="ml-1" />
+//     </div>
+//   </motion.div>
+// );
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -149,7 +151,7 @@ export default function Home() {
                 </h2>
               </div>
               <div className="mt-6 md:mt-0">
-                <Link href="#" className="text-slate-900 font-bold border-b-2 border-slate-900 pb-1 hover:text-amber-600 hover:border-amber-600 transition-all text-sm uppercase tracking-wide">
+                <Link href="/practice-areas" className="text-slate-900 font-bold border-b-2 border-slate-900 pb-1 hover:text-amber-600 hover:border-amber-600 transition-all text-sm uppercase tracking-wide">
                   View All Practices
                 </Link>
               </div>
@@ -162,14 +164,9 @@ export default function Home() {
               variants={staggerContainer}
               className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
             >
-              {[
-                { icon: Plane, title: "Aviation & Maritime", desc: "Specialized legal services for the transport sector, covering regulatory compliance and vessel operations." },
-                { icon: User, title: "Airlines & Passenger Dispute Resolutions", desc: "Legal representation for carriers and passengers regarding regulatory claims and liability." },
-                { icon: FileText, title: "Taxation & VAT", desc: "Optimizing tax efficiency and ensuring compliance with national and international tax laws." },
-                { icon: Gavel, title: "Real Estate", desc: "Comprehensive counsel for commercial development, leasing, and zoning matters." },
-              ].map((practice, index) => (
-                <PracticeArea key={index} {...practice} />
-              ))}
+              {practiceAreasMini.slice(0, 4).map((area, index) => (
+              <PracticeCard key={index} area={area} slug={`${area.slug}`} />
+            ))}
             </motion.div>
           </div>
         </section>

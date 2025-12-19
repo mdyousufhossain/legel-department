@@ -7,6 +7,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { practiceAreasMini } from "@/const";
+import PracticeCard from "@/components/PracticeCard";
 
 // Reusing your animation variants for consistency 
 const fadeInUp = {
@@ -23,138 +25,7 @@ const staggerContainer = {
 };
 
 // --- Data ---
-const practiceAreas = [
-  {
-    title: "Aviation & Maritime",
-    icon: Plane,
-    description: "Specialized legal services for the transport sector, covering regulatory compliance and vessel operations.",
-    capabilities: [
-      "Aviation Law & Maritime Law",
-      "Vessel Registration",
-      "Aircraft Financing"
-    ]
-  },
-  {
-    title: "Airlines & Passenger Dispute Resolutions",
-    icon: Users, // Or a specific aviation icon
-    description: "Legal representation for carriers and passengers regarding regulatory claims and liability.",
-    capabilities: [
-      "Consumer Protection Claims",
-      "Flight Delay & Cancellation Liability",
-      "Baggage & Personal Injury Claims",
-      "ICAO/IATA Compliance",
-      "Ticket Refund Litigation"
-    ]
-  },
-  {
-    title: "Taxation & VAT",
-    icon: FileText,
-    description: "Optimizing tax efficiency and ensuring compliance with national and international tax laws.",
-    capabilities: [
-      "VAT Planning & Compliance",
-      "Tax Controversy & Litigation",
-      "International Tax Planning",
-      "Wealth Transfer",
-      "Corporate Tax Strategy"
-    ]
-  },
-  {
-    title: "Transport & Cargo Dispute Resolutions",
-    icon: Plane, // Suggesting Ship icon to differentiate from Aviation
-    description: "Handling complex logistics litigation, freight claims, and maritime commerce disputes.",
-    capabilities: [
-      "Freight & Logistics Claims",
-      "Cargo Damage Disputes",
-      "Supply Chain Litigation",
-      "Carrier Liability",
-      "Warehousing Disputes"
-    ]
-  },
-  {
-    title: "Corporate & Foreign Direct Investments",
-    icon: Briefcase,
-    description: "Providing strategic counsel on global market entry and high-value corporate restructuring.",
-    capabilities: [
-      "Foreign Direct Investment (FDI)",
-      "Business Setup & Company Formation",
-      "Joint Ventures",
-      "Securities & Capital Markets",
-      "Corporate Governance"
-    ]
-  },
-  {
-    title: "Litigation & Dispute Resolution",
-    icon: Scale,
-    description: "Trial-ready representation for high-stakes business and criminal disputes across all jurisdictions.",
-    capabilities: [
-      "Commercial & Civil Litigation",
-      "Criminal Law Defense",
-      "Family Law Matters",
-      "Alternative Dispute Resolution (ADR)",
-      "Appellate Practice"
-    ]
-  },
-  {
-    title: "Telecommunications & Broadcasting",
-    icon: Radio,
-    description: "Navigating the complex regulatory and licensing landscape of the media and tech sectors.",
-    capabilities: [
-      "Licensing Matters",
-      "Regulatory Compliance",
-      "Spectrum Allocation",
-      "Broadcasting Rights",
-      "Telecom Infrastructure"
-    ]
-  },
-  {
-    title: "Property & Real Estate",
-    icon: Gavel,
-    description: "Comprehensive due diligence and advisory for property acquisition and development.",
-    capabilities: [
-      "Property Vetting & Due Diligence",
-      "Commercial Development",
-      "Zoning & Land Use",
-      "Real Estate Finance",
-      "Construction Law"
-    ]
-  },
-  {
-    title: "Banking & Financial Matters",
-    icon: Landmark,
-    description: "Representing financial institutions and borrowers in sophisticated lending and regulatory structures.",
-    capabilities: [
-      "Syndicated Lending",
-      "Project Finance",
-      "Restructuring & Insolvency",
-      "Fintech Regulation",
-      "Debt Recovery"
-    ]
-  },
-  {
-    title: "Intellectual Property & Trade",
-    icon: ShieldCheck,
-    description: "Protecting the intangible assets and commercial interests of global enterprises.",
-    capabilities: [
-      "IP Portfolio Management",
-      "Trademark & Branding",
-      "Trade & Commerce Regulations",
-      "Copyright Enforcement",
-      "Trade Secrets"
-    ]
-  },
-  {
-    title: "Labour & Employment",
-    icon: Users,
-    description: "Strategic advisory on workplace compliance, human capital, and labor relations.",
-    capabilities: [
-      "Workplace Investigations",
-      "Labor Relations",
-      "Executive Compensation",
-      "Employment Contracts",
-      "Discrimination Defense"
-    ]
-  }
-];
+
 
 // --- Components ---
 
@@ -234,36 +105,7 @@ const Methodology = () => (
   </section>
 );
 
-const PracticeCard = ({ area }: { area: typeof practiceAreas[0] }) => (
-  <motion.div 
-    variants={fadeInUp}
-    className="group bg-white border border-slate-200 p-8 hover:border-amber-500/30 hover:shadow-xl transition-all duration-300 flex flex-col h-full"
-  >
-    <div className="mb-6 flex justify-between items-start">
-      <div className="w-14 h-14 bg-slate-50 rounded-lg flex items-center justify-center text-slate-900 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300">
-        <area.icon size={28} />
-      </div>
-    </div>
-    
-    <h3 className="font-serif text-2xl font-bold text-slate-900 mb-3">{area.title}</h3>
-    <p className="text-slate-500 mb-8 text-sm leading-relaxed min-h-[60px]">{area.description}</p>
-    
-    <div className="mt-auto">
-      <div className="space-y-3 mb-8">
-        {area.capabilities.map((cap, idx) => (
-          <div key={idx} className="flex items-center gap-2 text-sm text-slate-700">
-            <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-            {cap}
-          </div>
-        ))}
-      </div>
-      
-      {/* <Link href="#" className="inline-flex items-center gap-2 text-amber-600 font-bold uppercase tracking-widest text-xs group-hover:gap-3 transition-all">
-        Case Studies <ArrowRight size={14} />
-      </Link> */}
-    </div>
-  </motion.div>
-);
+
 
 export default function PracticeAreasPage() {
   return (
@@ -284,8 +126,8 @@ export default function PracticeAreasPage() {
             variants={staggerContainer}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {practiceAreas.map((area, index) => (
-              <PracticeCard key={index} area={area} />
+            {practiceAreasMini.map((area, index) => (
+              <PracticeCard key={index} area={area} slug={`${area.slug}`} />
             ))}
           </motion.div>
         </div>

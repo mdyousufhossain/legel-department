@@ -48,11 +48,23 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Expertise</h4>
             <ul className="space-y-4 text-sm">
-              <li className="hover:text-amber-500 transition-colors">Corporate Litigation </li>
-              <li className="hover:text-amber-500 transition-colors">Mergers & Acquisitions</li>
-              <li className="hover:text-amber-500 transition-colors">Intellectual Property</li>
-              <li className="hover:text-amber-500 transition-colors">Real Estate & Zoning</li>
-              <li className="hover:text-amber-500 transition-colors">International Arbitration</li>
+              <li className="hover:text-amber-500 transition-colors"> 
+                <Link href="/practice-areas/aviation-maritime">Aviation & Maritime</Link>
+                Corporate Litigation </li>
+              <li className="hover:text-amber-500 transition-colors">
+                <Link href="/practice-areas/airlines-passenger-dispute-resolutions">Airlines & Passenger Dispute Resolutions</Link>
+                </li>
+              <li className="hover:text-amber-500 transition-colors">
+                <Link href="/practice-areas/taxation-vat">    
+                Taxation & VAT
+                </Link>
+              </li>
+              <li className="hover:text-amber-500 transition-colors">
+                <Link href="/practice-areas/mergers-acquisitions">Mergers & Acquisitions</Link>
+              </li>
+              <li className="hover:text-amber-500 transition-colors">
+                <Link href="/practice-areas/intellectual-property">Intellectual Property</Link>
+              </li>
             </ul>
           </div>
 
