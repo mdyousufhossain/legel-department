@@ -44,15 +44,16 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Practices */}
+          {/* corporate-foreign-direct-investments
+          transport-cargo-dispute-resolutions */}
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Expertise</h4>
             <ul className="space-y-4 text-sm">
               <li className="hover:text-amber-500 transition-colors"> 
                 <Link href="/practice-areas/aviation-maritime">Aviation & Maritime</Link>
-                Corporate Litigation </li>
+               </li>
               <li className="hover:text-amber-500 transition-colors">
-                <Link href="/practice-areas/airlines-passenger-dispute-resolutions">Airlines & Passenger Dispute Resolutions</Link>
+                <Link href="/practice-areas/airlines-passenger-dispute-resolutions">Airlines Resolutions</Link>
                 </li>
               <li className="hover:text-amber-500 transition-colors">
                 <Link href="/practice-areas/taxation-vat">    
@@ -60,10 +61,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="hover:text-amber-500 transition-colors">
-                <Link href="/practice-areas/mergers-acquisitions">Mergers & Acquisitions</Link>
+                <Link href="/practice-areas/corporate-foreign-direct-investments">Corporate Investments</Link>
               </li>
               <li className="hover:text-amber-500 transition-colors">
-                <Link href="/practice-areas/intellectual-property">Intellectual Property</Link>
+                <Link href="/practice-areas/transport-cargo-dispute-resolutions">Transport Resolutions</Link>
               </li>
             </ul>
           </div>
