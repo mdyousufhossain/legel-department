@@ -50,7 +50,7 @@ const Navbar = () => {
           <Link href="/" className="relative z-50 flex items-center gap-3 group">
             <div className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0 transition-transform duration-500 group-hover:rotate-[10deg]">
               <Image 
-                src="/logo.png" 
+                src="/logo-min.png" 
                 alt="Sky Space Aviation" 
                 fill
                 className="object-contain"
