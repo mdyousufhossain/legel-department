@@ -57,13 +57,13 @@ const Navbar = () => {
                 priority 
               />
             </div>
-            
+            {/* Sky space aviation and legal consultancy firm */}
             <div className="flex flex-col">
               <span className="font-serif text-lg md:text-xl font-bold text-white leading-none tracking-tight">
                 SKY SPACE
               </span>
               <span className="text-[9px] md:text-[10px] font-sans font-bold uppercase tracking-[0.3em] text-amber-500">
-                Aviation & Consultancy Legal Firm
+                Aviation & Legal Consultancy Firm
               </span>
             </div>
           </Link>

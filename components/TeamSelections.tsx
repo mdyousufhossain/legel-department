@@ -32,7 +32,7 @@ const attorneys = [
   },
 {
      name: "Md Sabbir Ahammed",
-    role: "Chief Executive Officer",
+    role: "Chief Executive Officer (CEO)",
     specialty: "Technical Operations",
     icon: ShieldCheck,
     education: [

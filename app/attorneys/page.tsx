@@ -47,7 +47,7 @@ const attorneys = [
       "LL.M in intl. Air & Space Law(AAUB)",
       "LL.M,LL.B(Hon's)",
       "CLO, Sky Space Aviation",
-      "Chief Legal Officer( CLO)"
+      "Chief Legal Officer (CLO)"
     ],
     icon: Plane,
     accent: "border-blue-900",
@@ -56,7 +56,7 @@ const attorneys = [
   },
 {
     name: "Md Sabbir Ahammed",
-    role: "Chief Executive Officer",
+    role: "Chief Executive Officer (CEO)",
     specialty: "Technical Operations",
     credentials: [
       "Aircraft Maintenance Engineer",
