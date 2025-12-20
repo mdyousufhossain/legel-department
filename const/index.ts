@@ -14,7 +14,7 @@ export const practiceAreasMini = [
       "Specialized legal services for the transport sector, covering regulatory compliance and vessel operations.",
     capabilities: [
       "Aviation Law & Maritime Law",
-      "Vessel Registration",
+      "Airliness & Vessel Registration",
       "Aircraft Financing"
     ]
   },

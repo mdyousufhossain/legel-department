@@ -41,7 +41,7 @@ export async function sendEmail(prevState: unknown, formData: FormData) {
   const { firstName, lastName, email, message, honeypot } = validatedFields.data;
 
   // 2. Spam Defense: Honeypot check
-  if (honeypot) {
+if (honeypot) {
     // Silently fail for bots
     return { success: "Message sent successfully!" };
   }
