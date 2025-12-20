@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { 
   Award, 
@@ -11,9 +10,8 @@ import {
   CheckCircle2,
   Gavel,
   Briefcase,
-  ArrowRight,
   
-} from "lucide-react";
+} from "lucide-react"; 
 import Link from "next/link";
 
 // --- Animation Variants ---
@@ -73,7 +71,7 @@ const attorneys = [
   {
     name: "Adv. Golam Zakaria Shakil",
     role: "Tax Advisor",
-    specialty: "Aviation & Maritime Law",
+    specialty: "Dhaka Judges Court",
     credentials: [
       "LL.M in Intl. Air & Space Law (AAUB)",
       "LL.M in Maritime Law",

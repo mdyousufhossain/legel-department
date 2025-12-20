@@ -23,7 +23,7 @@ const attorneys = [
   {
     name: "Md Rubayet Hossain Rakib",
     role: "Chief Legal Officer (CLO)",
-    specialty: "Aviation & Corporate Law",
+    specialty: "Aviation & Commercial Expert",
     icon: Briefcase,
     education: [
       "LL.M in Intl. Air & Space Law (AAUB) - 2 Years",
@@ -44,7 +44,7 @@ const attorneys = [
   {
     name: "Adv. Golam Zakaria Shakil",
     role: "Tax Advisor",
-    specialty: "Maritime & Aviation Law",
+    specialty: "Dhaka Judges Court",
     icon: Scale,
     education: [
       "LL.M in Intl. Air & Space Law (AAUB) - 2 Years",
