@@ -18,7 +18,8 @@ import {
   Phone, Mail, MapPin, ChevronRight, Quote, Linkedin, CheckCircle2, 
   Plane,
   User,
-  FileText
+  FileText,
+  Contact
 } from "lucide-react";
 import Image from "next/image";
 import { Loader } from "@/components/Loader/MainLoader";
@@ -31,6 +32,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import Link from "next/link";
 import { practiceAreasMini } from "@/const";
 import PracticeCard from "@/components/PracticeCard";
+import ContactForm from "@/components/Form/ContactForm";
 
 // --- Animation Variants ---
 const fadeInUp = {
@@ -214,17 +216,7 @@ export default function Home() {
               >
                 <div className="absolute top-0 left-0 w-full h-1 bg-amber-500 rounded-t-md" />
                 <h3 className="font-serif text-2xl text-slate-900 mb-6">Request Evaluation</h3>
-                <form className="space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <input type="text" placeholder="First Name" className="w-full bg-slate-50 border border-slate-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500 placeholder-slate-400 transition-shadow" />
-                    <input type="text" placeholder="Last Name" className="w-full bg-slate-50 border border-slate-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500 placeholder-slate-400 transition-shadow" />
-                  </div>
-                  <input type="email" placeholder="Email Address" className="w-full bg-slate-50 border border-slate-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500 placeholder-slate-400 transition-shadow" />
-                  <textarea rows={4} placeholder="How can we help?" className="w-full bg-slate-50 border border-slate-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500 placeholder-slate-400 transition-shadow resize-y min-h-[96px]"></textarea>
-                  <button className="w-full bg-amber-600 text-white font-bold uppercase tracking-widest text-sm py-3 hover:bg-amber-700 transition-colors mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500">
-                    Submit Request
-                  </button>
-                </form>
+                <ContactForm />
               </motion.div>
             </div>
           </div>
